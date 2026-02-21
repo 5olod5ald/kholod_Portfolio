@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kholod Khalid | Data Engineering Student</title>
+    
+    <!-- Font Awesome للايقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- ملف CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 🌟 شريط التحميل المتحرك -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- 🌟 زر العودة للأعلى -->
+    <button id="scroll-to-top" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- 🌟 القائمة العلوية -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">K</span>
+                <span class="logo-full">Kholod Khalid</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <!-- زر تبديل الوضع (فاتح/غامق) -->
+            <div class="theme-switch">
+                <i class="fas fa-moon"></i>
+            </div>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🌟 الصفحة الرئيسية (Hero Section) -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <!-- الصورة في الشمال -->
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="images/kholod.jpg" alt="Kholod Khalid" class="profile-img">
+                    
+                    <!-- أيقونات التواصل تحت الصورة -->
+                    <div class="hero-social-under">
+                        <a href="https://github.com/5olod5ald" target="_blank" class="social-icon-under" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kholod-khaled" target="_blank" class="social-icon-under" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:kholod.khaalid@email.com" class="social-icon-under" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/20123456789" target="_blank" class="social-icon-under" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- المحتوى في اليمين -->
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🚀</span>
+                    <span class="badge-text">Data Engineering Student</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-greeting">Hi, I'm</span>
+                    <span class="title-name">Kholod Khalid Ahmed</span>
+                </h1>
+                <div class="hero-typing">
+                    <span class="typed-text"></span>
+                    <span class="cursor">&nbsp;</span>
+                </div>
+                <p class="hero-description">
+                    passionate about transforming raw data into intelligent solutions. 
+                    Building data pipelines, implementing algorithms, and creating meaningful insights 
+                    from complex datasets.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Let's Connect <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 قسم عنّي -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-content-full">
+                    <span class="section-subtitle">WHO AM I</span>
+                    <h2 class="section-title">Data Engineering Student with Passion for Problem Solving</h2>
+                    <p class="about-text">
+                        I'm Kholod Khalid, a dedicated second-year Data Engineering student with a strong foundation 
+                        in building data solutions. My journey in tech started with a curiosity 
+                        about how data drives decisions, and has evolved into a mission to create intelligent 
+                        systems that make a difference.
+                    </p>
+                    <p class="about-text">
+                        I believe in the power of combining theoretical knowledge with practical application. 
+                        Each project I've worked on has taught me something new - from optimizing database 
+                        queries to implementing complex algorithms.
+                    </p>
+                    <a href="#" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 قسم المشاريع -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">MY WORK</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    A collection of my best work in Data Engineering and Software Development
+                </p>
+            </div>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="data-engineering">Data Engineering</button>
+                <button class="filter-btn" data-filter="ai">Algorithms</button>
+                <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- 1️⃣ Library Management System -->
+                <div class="project-card" data-category="data-engineering">
+                    <div class="card-image">
+                        <img src="images/library-system.jpg" alt="Library Management System">
+                        <div class="card-overlay">
+                            <div class="card-links">
+                                <a href="https://github.com/5olod5ald/library_management_project" target="_blank" class="card-link" title="GitHub Repository">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Database Design</span>
+                        </div>
+                        <h3 class="card-title">Library Management System</h3>
+                        <p class="card-description">
+                            Complete library management solution with book tracking, member management, 
+                            and automated borrowing system. Implemented complex database relationships 
+                            and optimized queries for fast retrieval.
+                        </p>
+                        <a href="https://github.com/5olod5ald/library_management_project" target="_blank" class="code-link">
+                            <i class="fab fa-github"></i> View Code on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2️⃣ Puzzle 8 - AI Game -->
+                <div class="project-card" data-category="ai">
+                    <div class="card-image">
+                        <img src="images/puzzle8.jpg" alt="Puzzle 8 AI Game">
+                        <div class="card-overlay">
+                            <div class="card-links">
+                                <a href="https://github.com/5olod5ald/Puzzle8-Game" target="_blank" class="card-link" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">BFS/DFS</span>
+                            <span class="tag">A* Algorithm</span>
+                        </div>
+                        <h3 class="card-title">Puzzle 8 - AI Solver</h3>
+                        <p class="card-description">
+                            Implementation of classic 8-puzzle game with AI solver using multiple algorithms. 
+                            Visual comparison of BFS, DFS, and A* performance with step-by-step solution display.
+                        </p>
+                        <a href="https://github.com/5olod5ald/Puzzle8-Game" target="_blank" class="code-link">
+                            <i class="fab fa-github"></i> View Code on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3️⃣ University System with LinkedList -->
+                <div class="project-card" data-category="data-engineering">
+                    <div class="card-image">
+                        <img src="images/university-system.jpg" alt="University System">
+                        <div class="card-overlay">
+                            <div class="card-links">
+                                <a href="https://github.com/5olod5ald/University-Registration-System" target="_blank" class="card-link" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Data Structures</span>
+                            <span class="tag">LinkedList</span>
+                        </div>
+                        <h3 class="card-title">University Management System</h3>
+                        <p class="card-description">
+                            Complete university system simulation using LinkedList data structure. 
+                            Manages students, courses, enrollments, and grades with efficient algorithms 
+                            for searching and sorting.
+                        </p>
+                        <a href="https://github.com/5olod5ald/University-Registration-System" target="_blank" class="code-link">
+                            <i class="fab fa-github"></i> View Code on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4️⃣ Jumia Web Scraping & Analysis -->
+                <div class="project-card" data-category="data-analysis">
+                    <div class="card-image">
+                        <img src="images/jumia-analysis.jpg" alt="Jumia Analysis">
+                        <div class="card-overlay">
+                            <div class="card-links">
+                                <a href="https://github.com/5olod5ald/Jumia-Notebook" target="_blank" class="card-link" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">BeautifulSoup</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Matplotlib</span>
+                        </div>
+                        <h3 class="card-title">Jumia Product Analysis</h3>
+                        <p class="card-description">
+                            End-to-end data project: Web scraping 1000+ products from Jumia, 
+                            data cleaning and preprocessing, exploratory analysis with visualizations.
+                        </p>
+                        <a href="https://github.com/5olod5ald/Jumia-Notebook" target="_blank" class="code-link">
+                            <i class="fab fa-github"></i> View Code on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 قسم المهارات والأدوات -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">EXPERTISE</span>
+                <h2 class="section-title">Technical Skills & Tools</h2>
+                <p class="section-description">
+                    Skills I've developed through projects and coursework
+                </p>
+            </div>
+
+            <div class="skills-showcase">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Java</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-database"></i>
+                        Databases
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- Data Engineering & Tools -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Data Engineering & Tools
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">BeautifulSoup</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">APIs</span>
+                    </div>
+                </div>
+
+                <!-- Currently Learning -->
+                <div class="skill-category learning">
+                    <h3 class="category-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Currently Learning
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Data Warehousing</span>
+                        <span class="skill-tag">ETL Pipelines</span>
+                        <span class="skill-tag">Apache Spark</span>
+                        <span class="skill-tag">Cloud Platforms</span>
+                        <span class="skill-tag">Stream Processing</span>
+                        <span class="skill-tag">Data Visualization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 قسم الخبرات والشهادات -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">JOURNEY</span>
+                <h2 class="section-title">Experience & Certifications</h2>
+                <p class="section-description">
+                    Continuous learning and professional development
+                </p>
+            </div>
+
+            <div class="timeline">
+                <!-- DEPI Experience -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Present</div>
+                        <h3 class="timeline-title">Data Engineering Trainee</h3>
+                        <h4 class="timeline-subtitle">Digital Egypt Pioneers Initiative (DEPI)</h4>
+                        <p class="timeline-description">
+                            Selected for the prestigious DEPI program for intensive training in Data Engineering. 
+                            Gaining hands-on experience with modern data stack including cloud platforms, 
+                            big data technologies, and advanced analytics.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- DataCamp Certifications -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024</div>
+                        <h3 class="timeline-title">Certifications & Courses</h3>
+                        <div class="certificates-grid">
+                            <div class="certificate-item">
+                                <i class="fab fa-python"></i>
+                                <div class="certificate-info">
+                                    <h4>Introduction to Python</h4>
+                                    <p>DataCamp</p>
+                                </div>
+                            </div>
+                            <div class="certificate-item">
+                                <i class="fas fa-database"></i>
+                                <div class="certificate-info">
+                                    <h4>Introduction to SQL</h4>
+                                    <p>DataCamp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- University Education -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Present</div>
+                        <h3 class="timeline-title">Second-Year Student</h3>
+                        <h4 class="timeline-subtitle">Faculty of Computers and Information</h4>
+                        <p class="timeline-description">
+                            Currently in my second year, specializing in Data Engineering track. 
+                            Passionate about databases, data structures, and building practical projects 
+                            that solve real-world problems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 قسم التواصل -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">GET IN TOUCH</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-description">
+                    Have a project in mind or just want to connect? I'd love to hear from you!
+                </p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Egypt (Remote)</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:kholod.khaalid@email.com">kholod.khaalid@email.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Phone</h3>
+                        <a href="tel:+20123456789">+20 123 456 789</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Kholod Khalid</h3>
+                    <p>Data Engineering Student</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/5olod5ald" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kholod-khaled" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:kholod.khaalid@email.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/20123456789" target="_blank" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kholod Khalid. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ملف JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
